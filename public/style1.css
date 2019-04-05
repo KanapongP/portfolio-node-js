@@ -1,0 +1,64 @@
+body {
+    background: url(arrestedbear.gif) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;   
+}h1 {
+    -webkit-text-stroke: 1.25px black;
+    -webkit-text-fill-color: white;
+}
+h2 {
+    font-size : 150%;
+    -webkit-text-stroke: 1.25px black;
+    -webkit-text-fill-color: white;
+}
+h3 {
+    font-size : 150%;
+    -webkit-text-stroke: 1.25px black;
+    -webkit-text-fill-color: white;
+}
+h5 {
+    font-size : 150%;
+    -webkit-text-stroke: 1.25px black;
+    -webkit-text-fill-color: white;
+}
+p {
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: white;
+    
+}
+
+ul {
+list-style-type: none;
+margin: -10px;
+padding: 0;
+width: 18%;
+background-color: rgb(136, 136, 238);
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+
+li a {
+display: block;
+color: #000;
+padding: 10px 20px;
+text-decoration: none;
+font-size: 20px;
+}
+
+li a.active {
+background: url(giphy.gif) no-repeat;
+background-size: contain;
+background-position: right;
+background-color: burlywood;
+-webkit-text-stroke: 1.25px rgb(216, 115, 115);
+-webkit-text-fill-color: white;
+
+}
+
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}

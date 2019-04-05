@@ -1,0 +1,87 @@
+<html><head>
+        <title>Contact</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    </head>
+    <body onload="fetchProfile()">
+          
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/gallery.html">Gallery</a></li>
+<li><a class="active" href="/contact.html">Contact</a></li>
+<br>    
+<table width = "30%" align = "left" >
+<tbody><tr>
+    <br><br><br><br><br><br><br><br><br><br>
+    <td width = "20%" >
+            <h1> &nbsp;Kanapong</h1>
+            <h1> &nbsp;Srianan</h1>
+            <h2>&nbsp;&nbsp;Student</h2>
+            <h3><a href = "mailto:kanapong.sri@gmail.com">&nbsp;&nbsp;kanapong.sri@gmail.com</a></h3>
+            <h3>&nbsp;(+66) - 830-703335</h3>
+            <img class = "portrait" src = "pedobear.gif" width= "190.6px" height="100px" align = "left">
+    </td>
+    <td align = "left">
+            
+    </td>
+</tr>
+</tbody></table>
+</ul>
+             <form action="" id="myForm">
+            <table width="50%" align="center" style="padding: 15px;   border:1px solid;">
+               
+                <tbody><tr>
+                    <td><h3><label>Subject:</label></h3></td>
+                    <td><input type="text" name="subject" value="" width="50px" id="Sub"> </td>
+                </tr>
+                <tr>
+                    <td><h3> <label>Message:</label></h3></td>
+                    <td> <textarea name="msg" id="Message"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><h3><label>Name:</label></h3></td>
+                    <td><input type="text" name="fullname" value="" id="Name"> </td>
+                </tr>
+                <tr>
+                    <td><h3><label>Gender:</label></h3></td>
+                    <td>
+                        <p><input type="radio" name="gender" value="male" id="Gender">male </p>
+                        <p><input type="radio" name="gender" value="female" id="Gender"> female </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3><label>Phone:</label></h3></td>
+                    <td><input type="tel" name="phone" value="" id="Phone"> </td>
+                </tr>
+                <tr>
+                    <td><h3><label>Email:</label></h3></td>
+                    <td><input type="email" value="" id="Email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="submit"></td>
+                </tr>
+    
+                
+            </tbody></table>
+           
+            </form></td>
+        </tr>
+        </tbody></table>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="profileResults"></div>
+                
+              </div>
+              
+            </div>
+      
+            <hr>
+      
+          </div> <!-- /container -->
+        <script src="main.js"></script>
+    </body></html>
