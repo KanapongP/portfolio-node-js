@@ -4,7 +4,10 @@ const path = require('path');
 
 const server = http.createServer((req, res) => {
   //file path
-  let filePath = path.join(__dirname, 'public', req.url === '/' ? '600610723(index).html' : req.url
+  let filePath = path.join(__dirname, 'public', 
+  req.url === '/' ? '600610723(index).html' : req.url &&
+  req.url === '/gallery' ? 'gallery.html' : req.url &&
+  req.url === '/contact' ? 'contact.html' : req.url
   );
 
   let extname = path.extname(filePath);
@@ -21,7 +24,7 @@ const server = http.createServer((req, res) => {
       contentType = 'application/json';
       break;
   }
-  // console.log(filePath);
+  console.log(filePath);
 
   fs.readFile(filePath, (err, content) => {
     if (err) {
